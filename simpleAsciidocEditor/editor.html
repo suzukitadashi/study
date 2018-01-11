@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/asciidoctor.js/dist/asciidoctor.js"></script>
+    <script src="node_modules/highlight.js/lib/highlight.js"></script>
+    <script src="editor.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="node_modules/asciidoctor.js/dist/css/asciidoctor.css" />
+    <link rel="stylesheet" href="node_modules/highlight.js/styles/github.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="github.css" />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <textarea id="editor" class="form-control"></textarea>
+        </div>
+        <div class="col-xs-6">
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
