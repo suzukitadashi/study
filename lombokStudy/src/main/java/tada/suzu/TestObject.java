@@ -9,7 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TestObject {
 
+	/** ID */
 	private int id;
+
+	/** Name */
 	private String name;
 	
 }

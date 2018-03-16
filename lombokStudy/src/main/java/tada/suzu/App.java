@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import lombok.val;
 import lombok.extern.slf4j.Slf4j;
+import tada.suzu.work.Work;
 
 /**
  * Hello world!
@@ -30,14 +31,15 @@ public class App {
 		log.info("-----");
 
 		val list = Arrays.asList("hoge", "fuga", "piyo");
-		list.forEach(log::info);
+		list.forEach(log::debug);
 
 		log.info("-----");
 
 		val map = new HashMap<String, Long>();
 		map.put("hoge", 1L);
 		log.info(map.get("hoge").toString());
-		
+
+		Work.print();
 
 	}
 }
